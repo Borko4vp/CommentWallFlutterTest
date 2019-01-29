@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     
     
     @objc func openCommentWall() {
-        let vc = CommentWallViewController()
+        let flutterEngine = (UIApplication.shared.delegate as? AppDelegate)?.flutterEngine;
+        let vc = CommentWallViewController(engine: flutterEngine, nibName: nil, bundle: nil)!
         let token = "4uKqlYQzXk1TgPstemFESGvx"
         let tenantKey = "telco"
         let channelUid = "e4c50f5e-cbcd-11e8-a7a2-ab70ea5e8cb9"
