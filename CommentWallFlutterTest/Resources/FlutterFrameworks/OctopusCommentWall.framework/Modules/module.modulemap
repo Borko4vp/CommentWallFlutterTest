@@ -1,0 +1,11 @@
+framework module OctopusCommentWall {
+  umbrella header "OctopusCommentWall.h"
+
+  export *
+  module * { export * }
+}
+
+module OctopusCommentWall.Swift {
+    header "OctopusCommentWall-Swift.h"
+    requires objc
+}
