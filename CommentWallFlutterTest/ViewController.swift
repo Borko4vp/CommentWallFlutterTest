@@ -20,16 +20,23 @@ class ViewController: UIViewController {
         openCommentWall()
     }
     
-    
     @objc func openCommentWall() {
         let flutterEngine = (UIApplication.shared.delegate as? AppDelegate)?.flutterEngine;
         let vc = CommentWallViewController(engine: flutterEngine, nibName: nil, bundle: nil)!
-        let token = "4uKqlYQzXk1TgPstemFESGvx"
-        let tenantKey = "telco"
-        let channelUid = "e4c50f5e-cbcd-11e8-a7a2-ab70ea5e8cb9"
+        let token = "VCCe1g-IdsyHvcDPPv9GyIQe"
+        let tenantKey = "telcodev"
+        let channelUid = "a0fe9810-d214-11e8-9738-77f58241a7fd"
         let isPartner = true
         let permissionLevel = 3
-        vc.setupRouteWith(token: token, tenanntKey: tenantKey, channelUid: channelUid, isPartner: isPartner, permissionLevel: permissionLevel)
+        vc.setupRouteWith(token: token,
+                          tenanntKey: tenantKey,
+                          channelUid: channelUid,
+                          isPartner: isPartner,
+                          permissionLevel: permissionLevel,
+                          userUid: "6c229b06-cbc9-11e8-88ca-832090bfbcf7",
+                          baseURL: "https://octopusdev.okiapp.com/octopus-server/api/",
+                          toolbarColor: UIColor.black,
+                          toolbarTextColor: UIColor.blue)
         navigationItem.title = ""
         self.navigationController?.pushViewController(vc, animated: true)
     }

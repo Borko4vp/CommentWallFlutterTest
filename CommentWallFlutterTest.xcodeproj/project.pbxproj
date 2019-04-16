@@ -16,6 +16,14 @@
 		D99DB47B2200550B00AF3999 /* Flutter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99DB4722200529700AF3999 /* Flutter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D99DB47D2200550B00AF3999 /* FlutterPluginRegistrant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99DB4742200529700AF3999 /* FlutterPluginRegistrant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D99DB47F2200550B00AF3999 /* OctopusCommentWall.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99DB4732200529700AF3999 /* OctopusCommentWall.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECE879FF2266259F006C65CD /* package_info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE879FB2266259F006C65CD /* package_info.framework */; };
+		ECE87A002266259F006C65CD /* package_info.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECE879FB2266259F006C65CD /* package_info.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECE87A012266259F006C65CD /* connectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE879FC2266259F006C65CD /* connectivity.framework */; };
+		ECE87A022266259F006C65CD /* connectivity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECE879FC2266259F006C65CD /* connectivity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECE87A032266259F006C65CD /* url_launcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE879FD2266259F006C65CD /* url_launcher.framework */; };
+		ECE87A042266259F006C65CD /* url_launcher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECE879FD2266259F006C65CD /* url_launcher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECE87A052266259F006C65CD /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE879FE2266259F006C65CD /* Reachability.framework */; };
+		ECE87A062266259F006C65CD /* Reachability.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECE879FE2266259F006C65CD /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +34,12 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D99DB47B2200550B00AF3999 /* Flutter.framework in Embed Frameworks */,
+				ECE87A022266259F006C65CD /* connectivity.framework in Embed Frameworks */,
+				ECE87A042266259F006C65CD /* url_launcher.framework in Embed Frameworks */,
+				ECE87A002266259F006C65CD /* package_info.framework in Embed Frameworks */,
 				D99DB47D2200550B00AF3999 /* FlutterPluginRegistrant.framework in Embed Frameworks */,
 				D99DB47F2200550B00AF3999 /* OctopusCommentWall.framework in Embed Frameworks */,
+				ECE87A062266259F006C65CD /* Reachability.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +58,10 @@
 		D99DB4732200529700AF3999 /* OctopusCommentWall.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OctopusCommentWall.framework; sourceTree = "<group>"; };
 		D99DB4742200529700AF3999 /* FlutterPluginRegistrant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlutterPluginRegistrant.framework; sourceTree = "<group>"; };
 		D99DB4752200529700AF3999 /* flutter_assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = flutter_assets; sourceTree = "<group>"; };
+		ECE879FB2266259F006C65CD /* package_info.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = package_info.framework; sourceTree = "<group>"; };
+		ECE879FC2266259F006C65CD /* connectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = connectivity.framework; sourceTree = "<group>"; };
+		ECE879FD2266259F006C65CD /* url_launcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = url_launcher.framework; sourceTree = "<group>"; };
+		ECE879FE2266259F006C65CD /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reachability.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE879FF2266259F006C65CD /* package_info.framework in Frameworks */,
+				ECE87A012266259F006C65CD /* connectivity.framework in Frameworks */,
+				ECE87A032266259F006C65CD /* url_launcher.framework in Frameworks */,
+				ECE87A052266259F006C65CD /* Reachability.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +120,10 @@
 		D99DB471220051E100AF3999 /* FlutterFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECE879FC2266259F006C65CD /* connectivity.framework */,
+				ECE879FB2266259F006C65CD /* package_info.framework */,
+				ECE879FE2266259F006C65CD /* Reachability.framework */,
+				ECE879FD2266259F006C65CD /* url_launcher.framework */,
 				D99DB4752200529700AF3999 /* flutter_assets */,
 				D99DB4722200529700AF3999 /* Flutter.framework */,
 				D99DB4742200529700AF3999 /* FlutterPluginRegistrant.framework */,

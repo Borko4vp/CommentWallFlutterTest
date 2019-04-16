@@ -2,8 +2,8 @@
 //  OctopusCommentWall.h
 //  OctopusCommentWall
 //
-//  Created by Borko Tomic on 12/24/18.
-//  Copyright © 2018 Borko Tomic. All rights reserved.
+//  Created by Borko Tomic on 2/27/19.
+//  Copyright © 2019 Borko Tomic. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
